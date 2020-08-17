@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+% \usepackage[portuguese]{babel}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+\usepackage{listings}
+\usepackage{xcolor}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\usepackage{float}
+ 
+\lstset{style=mystyle}
+
+\usepackage[brazil]{babel}   
+\usepackage[utf8]{inputenc}  
+
+     
+\sloppy
+
+\title{Gerenciamento de Redes:\\ Monitoramento com Nagios}
+
+\author{
+Ian Gustavo Alves Pessoa\inst{1}, Levi da Silva Lima\inst{2}, William Azevedo da Silva\inst{3}, \\Daniel Akio Chen\inst{4} }
+
+
+\address{Núcleo de Computação -- Universidade do Estado do Amazonas
+  (UEA)\\
+  Manaus -- AM -- Brazil
+  \email{\{igaps.eng17, ldsl.eng16, wads.eng16, dac.eng17\}@uea.edu.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+\input{abstract}
+
+\section{Fundamentação Teórica}
+
+\input{topics/fundamentacaoTeorica}
+
+\section{Desenvolvimento}
+% ---------------- begin --------------------
+
+\subsection{Visão de Casos Confirmados}
+
+\input{topics/part1topic1}
+
+\subsection{Visualização de Dados}
+
+\input{topics/part2topic1}
+
+\subsection{Tipos de Tarefas}
+
+\subsubsection{Tarefa de Classificação mediante Aprendizado Supervisionado}
+
+\input{topics/classificacaoSupervisionado}
+
+\subsubsection{Tarefa de Regressão mediante Aprendizado Supervisionado}
+
+\input{topics/regressaoSupervisionado}
+
+\subsubsection{Tarefa de Aprendizado Não-Supervisionado}
+
+\input{topics/naoSupervisionado}
+
+
+
+% ---------------- end -----------------------
+
+\section{Conclusão}
+
+\input{topics/conclusao}
+
+\nocite{*}
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
